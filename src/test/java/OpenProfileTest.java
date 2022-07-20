@@ -4,15 +4,15 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import pageObject.LoginPage;
-import pageObject.MainPage;
-import pageObject.ProfilePage;
+import pageobject.LoginPage;
+import pageobject.MainPage;
+import pageobject.ProfilePage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.Assert.assertEquals;
-import static pageObject.LoginPage.LOGIN_PAGE_URL;
-import static pageObject.MainPage.MAIN_PAGE_URL;
-import static pageObject.ProfilePage.PROFILE_PAGE_URL;
+import static pageobject.LoginPage.LOGIN_PAGE_URL;
+import static pageobject.MainPage.MAIN_PAGE_URL;
+import static pageobject.ProfilePage.PROFILE_PAGE_URL;
 
 public class OpenProfileTest {
 

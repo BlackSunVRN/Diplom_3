@@ -2,10 +2,10 @@ import com.codeborne.selenide.Configuration;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
-import pageObject.MainPage;
+import pageobject.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
-import static pageObject.MainPage.MAIN_PAGE_URL;
+import static pageobject.MainPage.MAIN_PAGE_URL;
 
 public class ConstructorTabsTest {
 

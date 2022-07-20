@@ -1,11 +1,21 @@
 package client;
 
 import io.qameta.allure.Step;
+import io.restassured.response.Response;
 import model.User;
 
 import static io.restassured.RestAssured.given;
 
 public class UserClient extends BaseApiClient{
+
+    @Step("Создание пользователя")
+    public void createUser(User user) {
+            given()
+                .spec(getReqSpecJSON())
+                .body(user)
+                .when()
+                .post("/api/auth/register");
+    }
 
     @Step("Получение токена")
     public String getAccessToken(User user) {
@@ -26,6 +36,4 @@ public class UserClient extends BaseApiClient{
                 .when()
                 .delete("/api/auth/user");
     }
-
-
 }
